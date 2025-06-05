@@ -1,0 +1,7 @@
+services:
+  log_parser:
+    build: .
+    volumes:
+      - ./logs:/app/logs
+      - ./reports:/app/reports
+    command: ["python", "log_interpreter.py"]
