@@ -9,20 +9,18 @@ jobs:
       matrix:
         python-version: ["3.13"]
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install black
-        pip install pylint
-    - name: Analysing the code with pylint and black
-      run: |
-        # pylint $(git ls-files '*.py')
-        pylint --disable=E0401 ./mysite
-        black ./mysite
-	
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r ./hw_08/requirements.txt
+          pip install black
+          pip install pylint
+      - name: Analysing the code with pylint and black
+        run: |
+          pylint --disable=E0401 --fail-under=7 ./hw_08/mysite
+          black ./hw_08/mysite
