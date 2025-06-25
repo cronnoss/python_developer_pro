@@ -24,3 +24,6 @@ createsuperuser:
 
 test:
 	python manage.py test polls
+
+install-debug-toolbar:
+	python -m pip install django-debug-toolbar
