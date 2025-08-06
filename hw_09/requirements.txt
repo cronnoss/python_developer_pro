@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+transformers
+PyYAML
+torch
+numpy==2.3.2
