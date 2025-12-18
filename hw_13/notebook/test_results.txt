@@ -1,0 +1,63 @@
+
+[Test 1]
+Question: Explain the ls command
+Answer: The ls (list) command is a command-line utility used for listing files and directories on a file system. It provides a simple way to view the contents of a directory, including its subdirectories and files. Here's how it works:
+
+1. Enter the directory you want to list. For example, if you want to see the contents of your home directory, you can enter the following command:
+
+```bash
+ls ~
+```
+
+This will display all the files and folders in your home directory, along with their respective attributes.
+
+2. You can also specify a file or folder name using the -r option (recursive), which lists all the subdirectories as well. This is
+------------------------------------------------------------
+
+[Test 2]
+Question: What does grep do?
+Answer: Grep (GNU Regular Expression Processor) is a command-line tool used for searching, matching, and filtering text files. It supports regular expressions, which allow for more complex searches than traditional string matching. Here's an explanation of what grep does:
+
+1. Standard input: The file containing the text to search.
+2. Command line options: A series of switches that control the behavior of grep. These include options such as -i (case insensitive), -e (match on regular expressions), --column (-c), and so on.
+3. Pattern: The pattern or regex that grep matches against the text. This can be specified with a pattern string or a file name containing the pattern
+------------------------------------------------------------
+
+[Test 3]
+Question: How to use chmod?
+Answer: Chmod (change mode) is a command-line utility used to modify the permissions of files, directories, and other resources on a Unix-like system. Here's how to use it:
+
+1. Make sure you are in the directory where you want to change the file or directory's permissions.
+
+2. Use the `chmod` command with the appropriate flags and values for the file or directory. For example, if you want to give read permission to a file called "test.txt" in the current directory, you could run:
+
+```bash
+chmod 400 test.txt
+```
+
+3. Press Enter after entering the command.
+
+Here's an example
+------------------------------------------------------------
+
+[Test 4]
+Question: Что делает команда cd?
+Answer: Certainly! The command "cd" stands for "change directory." It is used to change the current working directory (i.e., the location where you are currently running your commands) from one directory to another.
+For example, if you want to switch to the folder located at "/home/username", you can type the following command into your terminal or command prompt:
+```
+cd /home/username
+```
+This will make you enter that specific directory. You can repeat this command as many times as necessary until you reach the desired destination.
+------------------------------------------------------------
+
+[Test 5]
+Question: Опиши команду mkdir
+Answer: To create a directory, you can use the `mkdir` command, which stands for "make directory". Here's an example of how to execute it on a Linux system:
+
+```bash
+# Create a new directory called 'my-directory' in the current directory
+mkdir my-directory
+```
+
+In this example, we are creating a new directory named `my-directory` in the current directory (`cd`) using the `mkdir` command. The first argument is the name of the directory to be created (in this case, `'my-directory'`), followed by any optional arguments that specify the path or location where the directory should be created.
+------------------------------------------------------------
