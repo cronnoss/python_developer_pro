@@ -72,14 +72,14 @@ Expected output: Concise English explanations regardless of input language
 ### Telegram Bot Demo
 *English question → English answer*
 
-![Bot Demo 1](hw_13/screenshots/tg_bot_1.png)
+![Bot Demo 1](screenshots/tg_bot_1.png)
 
 *Russian question → English answer*
 
-![Bot Demo 2](hw_13/screenshots/tg_bot_2.png)
+![Bot Demo 2](screenshots/tg_bot_2.png)
 
 
-![Bot Demo 3](hw_13/screenshots/tg_bot_3.png)
+![Bot Demo 3](screenshots/tg_bot_3.png)
 
 
 ## Learning Outcomes
