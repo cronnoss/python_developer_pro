@@ -24,25 +24,40 @@ def dot_rename(path):
     os.rename(path, os.path.join(head, "." + fn))
 
 
-def insert_appsinstalled(memc_addr, appsinstalled, dry_run=False):
+def insert_appsinstalled(memc_addr, appsinstalled, dry_run=False, max_retries=3):
     ua = appsinstalled_pb2.UserApps()
     ua.lat = appsinstalled.lat
     ua.lon = appsinstalled.lon
     key = "%s:%s" % (appsinstalled.dev_type, appsinstalled.dev_id)
     ua.apps.extend(appsinstalled.apps)
     packed = ua.SerializeToString()
-    # @TODO persistent connection
-    # @TODO retry and timeouts!
-    try:
-        if dry_run:
-            logging.debug("%s - %s -> %s" % (memc_addr, key, str(ua).replace("\n", " ")))
-        else:
-            memc = memcache.Client([memc_addr])
-            memc.set(key, packed)
-    except Exception as e:
-        logging.exception("Cannot write to memc %s: %s" % (memc_addr, e))
-        return False
-    return True
+
+    if dry_run:
+        logging.debug("%s - %s -> %s" % (memc_addr, key, str(ua).replace("\n", " ")))
+        return True
+
+    memc = memcache.Client([memc_addr], socket_timeout=3)
+
+    for attempt in range(max_retries):
+        try:
+            result = memc.set(key, packed)
+            if not result:
+                logging.warning("Memcache set returned False for key %s (attempt %d/%d)" % (key, attempt + 1, max_retries))
+                if attempt < max_retries - 1:
+                    continue
+                return False
+            return True
+        except (ConnectionError, TimeoutError, OSError) as e:
+            logging.warning("Connection error to memc %s: %s (attempt %d/%d)" % (memc_addr, e, attempt + 1, max_retries))
+            if attempt < max_retries - 1:
+                continue
+            logging.error("Failed to write to memc %s after %d attempts" % (memc_addr, max_retries))
+            return False
+        except Exception as e:
+            logging.exception("Unexpected error writing to memc %s: %s" % (memc_addr, e))
+            return False
+
+    return False
 
 
 def parse_appsinstalled(line):
@@ -98,12 +113,14 @@ def main(options):
                 processed += 1
             else:
                 errors += 1
-        if not processed:
+
+        total_attempts = processed + errors
+        if not total_attempts:
             fd.close()
             dot_rename(fn)
             continue
 
-        err_rate = float(errors) / processed
+        err_rate = float(errors) / total_attempts
         if err_rate < NORMAL_ERR_RATE:
             logging.info("Acceptable error rate (%s). Successfull load" % err_rate)
         else:

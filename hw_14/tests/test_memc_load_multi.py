@@ -173,5 +173,97 @@ def test_apps_installed_namedtuple():
     assert ai.apps == [1, 2, 3]
 
 
+def test_insert_appsinstalled_success():
+    """Test that insert_appsinstalled successfully writes to memcache."""
+    from memc_load_multi import insert_appsinstalled
+
+    # Create mock memcache client
+    mock_memc = MagicMock()
+    mock_memc.servers = ['127.0.0.1:33013']
+    mock_memc.set_multi.return_value = []  # Empty list means all keys were set successfully
+
+    # Create test data
+    appsinstalled_list = [
+        AppsInstalled("idfa", "device1", 55.55, 42.42, [1, 2, 3]),
+        AppsInstalled("idfa", "device2", 56.56, 43.43, [4, 5, 6])
+    ]
+
+    # Call insert_appsinstalled
+    result = insert_appsinstalled(mock_memc, appsinstalled_list, dry_run=False)
+
+    # Assertions
+    assert result is True
+    mock_memc.set_multi.assert_called_once()
+    call_args = mock_memc.set_multi.call_args[0][0]
+    assert len(call_args) == 2
+    assert "idfa:device1" in call_args
+    assert "idfa:device2" in call_args
+
+
+def test_insert_appsinstalled_failure():
+    """Test that insert_appsinstalled handles memcache failures."""
+    from memc_load_multi import insert_appsinstalled
+
+    # Create mock memcache client that fails
+    mock_memc = MagicMock()
+    mock_memc.servers = ['127.0.0.1:33013']
+    mock_memc.set_multi.return_value = ["idfa:device1"]  # Failed to set this key
+
+    # Create test data
+    appsinstalled_list = [
+        AppsInstalled("idfa", "device1", 55.55, 42.42, [1, 2, 3])
+    ]
+
+    # Call insert_appsinstalled with max_retries=1 to speed up test
+    result = insert_appsinstalled(mock_memc, appsinstalled_list, dry_run=False, max_retries=1)
+
+    # Assertions
+    assert result is False
+    assert mock_memc.set_multi.call_count == 1
+
+
+def test_insert_appsinstalled_connection_error():
+    """Test that insert_appsinstalled handles connection errors with retries."""
+    from memc_load_multi import insert_appsinstalled
+
+    # Create mock memcache client that raises connection error
+    mock_memc = MagicMock()
+    mock_memc.servers = ['127.0.0.1:33013']
+    mock_memc.set_multi.side_effect = ConnectionError("Connection refused")
+
+    # Create test data
+    appsinstalled_list = [
+        AppsInstalled("idfa", "device1", 55.55, 42.42, [1, 2, 3])
+    ]
+
+    # Call insert_appsinstalled with max_retries=2
+    result = insert_appsinstalled(mock_memc, appsinstalled_list, dry_run=False, max_retries=2)
+
+    # Assertions
+    assert result is False
+    assert mock_memc.set_multi.call_count == 2  # Should retry
+
+
+def test_insert_appsinstalled_dry_run():
+    """Test that insert_appsinstalled in dry_run mode doesn't write to memcache."""
+    from memc_load_multi import insert_appsinstalled
+
+    # Create mock memcache client
+    mock_memc = MagicMock()
+    mock_memc.servers = ['127.0.0.1:33013']
+
+    # Create test data
+    appsinstalled_list = [
+        AppsInstalled("idfa", "device1", 55.55, 42.42, [1, 2, 3])
+    ]
+
+    # Call insert_appsinstalled in dry_run mode
+    result = insert_appsinstalled(mock_memc, appsinstalled_list, dry_run=True)
+
+    # Assertions
+    assert result is True
+    mock_memc.set_multi.assert_not_called()  # Should not call set_multi in dry_run mode
+
+
 if __name__ == '__main__':
     pytest.main()

@@ -23,7 +23,7 @@ def dot_rename(path):
     os.rename(path, os.path.join(head, "." + fn))
 
 
-def insert_appsinstalled(memc, appsinstalled_list, dry_run=False):
+def insert_appsinstalled(memc, appsinstalled_list, dry_run=False, max_retries=3):
     items = {}
     readable = {}
     for appsinstalled in appsinstalled_list:
@@ -36,23 +36,37 @@ def insert_appsinstalled(memc, appsinstalled_list, dry_run=False):
         items[key] = packed
         readable[key] = str(ua).replace("\n", " ")
 
-    try:
-        server_repr = None
-        if hasattr(memc, "servers") and memc.servers:
-            server_repr = memc.servers[0]
-        else:
-            server_repr = memc
+    server_repr = None
+    if hasattr(memc, "servers") and memc.servers:
+        server_repr = memc.servers[0]
+    else:
+        server_repr = memc
 
-        if dry_run:
-            for key, ua_str in readable.items():
-                logging.debug("%s - %s -> %s" % (server_repr, key, ua_str))
-        else:
-            memc.set_multi(items)
-    except Exception as exp:
-        server_repr = server_repr if server_repr is not None else memc
-        logging.exception("Cannot write to memc %s: %s" % (server_repr, exp))
-        return False
-    return True
+    if dry_run:
+        for key, ua_str in readable.items():
+            logging.debug("%s - %s -> %s" % (server_repr, key, ua_str))
+        return True
+
+    for attempt in range(max_retries):
+        try:
+            failed_keys = memc.set_multi(items)
+            if failed_keys:
+                logging.warning("Memcache set_multi failed for %d keys (attempt %d/%d)" % (len(failed_keys), attempt + 1, max_retries))
+                if attempt < max_retries - 1:
+                    continue
+                return False
+            return True
+        except (ConnectionError, TimeoutError, OSError) as e:
+            logging.warning("Connection error to memc %s: %s (attempt %d/%d)" % (server_repr, e, attempt + 1, max_retries))
+            if attempt < max_retries - 1:
+                continue
+            logging.error("Failed to write to memc %s after %d attempts" % (server_repr, max_retries))
+            return False
+        except Exception as exp:
+            logging.exception("Unexpected error writing to memc %s: %s" % (server_repr, exp))
+            return False
+
+    return False
 
 
 def parse_appsinstalled(line):
@@ -89,19 +103,24 @@ def process_file(fn, device_memc, dry_run):
     errors = 0
     logging.info("Processing %s" % fn)
 
-    # Create memcache clients for each device type
-    memc_idfa = memcache.Client([device_memc["idfa"]])
-    memc_gaid = memcache.Client([device_memc["gaid"]])
-    memc_adid = memcache.Client([device_memc["adid"]])
-    memc_dvid = memcache.Client([device_memc["dvid"]])
+    # Create memcache clients for each device type with timeout
+    memc_idfa = memcache.Client([device_memc["idfa"]], socket_timeout=3)
+    memc_gaid = memcache.Client([device_memc["gaid"]], socket_timeout=3)
+    memc_adid = memcache.Client([device_memc["adid"]], socket_timeout=3)
+    memc_dvid = memcache.Client([device_memc["dvid"]], socket_timeout=3)
 
     with gzip.open(fn, "rt") as fd:
         lines = fd.readlines()
         appsinstalled_list = []
+        parse_errors = 0
         for line in lines:
+            if not line.strip():
+                continue
             appsinstalled = process_line(line, device_memc, dry_run)
             if appsinstalled:
                 appsinstalled_list.append(appsinstalled)
+            else:
+                parse_errors += 1
 
         # Group by device type
         per_dev = {"idfa": [], "gaid": [], "adid": [], "dvid": []}
@@ -130,13 +149,13 @@ def process_file(fn, device_memc, dry_run):
             else:
                 errors += len(apps_list)
 
-        processed = len(appsinstalled_list)
+        total_attempts = succeeded + errors + parse_errors
 
-    if not processed:
+    if not total_attempts:
         dot_rename(fn)
         return
 
-    err_rate = float(errors) / processed
+    err_rate = float(errors + parse_errors) / total_attempts
     if err_rate < NORMAL_ERR_RATE:
         logging.info("Acceptable error rate (%s). Successful load" % err_rate)
     else:
