@@ -203,5 +203,4 @@ bot/usage_logs
 uv.lock
 .vscode
 .claude
-.github
 .python-version
