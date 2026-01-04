@@ -1,0 +1,545 @@
+[
+    {
+        "title": "Cameras and Lenses (2020)",
+        "url": "https://ciechanow.ski/cameras-and-lenses/",
+        "score": "114 points",
+        "comments_link": "item?id=46455872",
+        "comment_urls": [
+            "https://news.ycombinator.com/item?id=25357315",
+            "https://www.patreon.com/ciechanowski"
+        ]
+    },
+    {
+        "title": "OpenWorkers: Self-Hosted Cloudflare Workers in Rust",
+        "url": "https://openworkers.com/introducing-openworkers",
+        "score": "210 points",
+        "comments_link": "item?id=46454693",
+        "comment_urls": [
+            "https://github.com/cloudflare/workerd",
+            "https://basecamp.com/cloud-exit",
+            "https://openworkers.com/docs/architecture/security",
+            "https://developers.cloudflare.com/workers/reference/security-model/",
+            "https://docs.deno.com/examples/cloudflare_workers_tutorial/",
+            "https://github.com/cloudflare/workerd",
+            "https://developers.cloudflare.com/workers/runtime-apis/webassembly/",
+            "https://www.rivet.dev/docs/actors/",
+            "https://mafia-arena.com"
+        ]
+    },
+    {
+        "title": "iOS allows alternative browser engines in Japan",
+        "url": "https://developer.apple.com/support/alternative-browser-engines-jp/",
+        "score": "146 points",
+        "comments_link": "item?id=46453950",
+        "comment_urls": [
+            "https://github.com/WebKit/WebKit/wiki/Safer-CPP-Guidelines",
+            "https://www.stroustrup.com/JSF-AV-rules.pdf",
+            "https://youtu.be/Gv4sDL9Ljww?si=Z4riPMKAKcIKaU0s",
+            "https://www.macrumors.com/2024/03/06/alternative-ios-app-stores-eu-grace-period/#:~:text=macOS%20Tahoe-,Alternative%20iOS%20App%20Stores%20Only%20Work%20for%20'Grace%20Period'%20When,marketplace%20you%20downloaded%20them%20from.",
+            "https://www.theverge.com/2024/1/26/24052067/mozilla-apple-ios-browser-rules-firefox",
+            "https://tailscale.com/kb/1106/taildrop",
+            "https://www.justice.gov/archives/opa/media/1344546/dl?inline",
+            "https://news.ycombinator.com/item?id=28387094",
+            "https://news.ycombinator.com/item?id=36393809",
+            "https://news.ycombinator.com/item?id=36368735",
+            "https://news.ycombinator.com/item?id=36370398",
+            "https://news.ycombinator.com/item?id=34156235",
+            "https://news.ycombinator.com/item?id=38773429",
+            "https://news.ycombinator.com/item?id=40666651",
+            "https://news.ycombinator.com/item?id=40671162",
+            "https://news.ycombinator.com/item?id=44810061",
+            "https://news.ycombinator.com/item?id=44826077",
+            "https://news.ycombinator.com/item?id=46307858",
+            "https://news.ycombinator.com/item?id=46310074",
+            "https://hn.algolia.com/?q=japan+apple",
+            "https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.web-browser-engine.host",
+            "https://www.justice.gov/archives/opa/media/1344546/dl?inline"
+        ]
+    },
+    {
+        "title": "Python Numbers Every Programmer Should Know",
+        "url": "https://mkennedy.codes/posts/python-numbers-every-programmer-should-know/",
+        "score": "105 points",
+        "comments_link": "item?id=46454470",
+        "comment_urls": [
+            "http://esr.ibiblio.org/?p=8161"
+        ]
+    },
+    {
+        "title": "Memory Subsystem Optimizations",
+        "url": "https://johnnysswlab.com/memory-subsystem-optimizations/",
+        "score": "7 points",
+        "comments_link": "item?id=46456215",
+        "comment_urls": []
+    },
+    {
+        "title": "Bluetooth Headphone Jacking: A Key to Your Phone [video]",
+        "url": "https://media.ccc.de/v/39c3-bluetooth-headphone-jacking-a-key-to-your-phone",
+        "score": "324 points",
+        "comments_link": "item?id=46453204",
+        "comment_urls": [
+            "https://github.com/auracast-research/race-toolkit",
+            "https://jsbin.com/jiqihuveci/edit?html,output",
+            "https://insinuator.net/2025/12/bluetooth-headphone-jacking-full-disclosure-of-airoha-race-vulnerabilities/",
+            "https://play.google.com/store/apps/details?id=pro.vitalii.andropods&hl=de",
+            "https://github.com/kavishdevar/librepods/tree/main",
+            "https://issuetracker.google.com/issues/371713238",
+            "https://en.wikipedia.org/wiki/Tempest_(codename)",
+            "https://en.wikipedia.org/wiki/Van_Eck_phreaking",
+            "https://news.ycombinator.com/item?id=25950845",
+            "https://news.ycombinator.com/item?id=45798439",
+            "https://news.ycombinator.com/item?id=34667522",
+            "https://news.ycombinator.com/item?id=43144607",
+            "https://news.ycombinator.com/item?id=46454740",
+            "https://www.audioreviews.org/apple-audio-adapter-review/",
+            "https://www.amazon.de/Qudelix-Bluetooth-Adaptive-unsymmetrisch-symmetrischer/dp/B088F7C976",
+            "https://www.androidauthority.com/ting-headphone-jack-survey-1020924/",
+            "https://www.bhphotovideo.com/c/products/usb-c-headphones/ci/59912?sort=PRICE_LOW_TO_HIGH",
+            "https://www.engadget.com/2006-11-21-palms-ed-colligan-laughs-off-iphone.html",
+            "https://youtu.be/BD8Nf09z_38",
+            "https://arxiv.org/pdf/2108.07190",
+            "https://youtu.be/O2SLyBL2kdM?si=Zq-EN8zxj4Y_UCwI",
+            "https://archive.ph/6201V",
+            "https://atomicinsights.com/jimmy-carter-never-served-nuclear-submarine/",
+            "https://www.cvefind.com/en/cve/CVE-2025-20700.html",
+            "https://www.cvefind.com/en/cve/CVE-2025-20701.html",
+            "https://www.cvefind.com/en/cve/CVE-2025-20702.html",
+            "https://news.ycombinator.com/item?id=46406310",
+            "https://github.com/auracast-research/race-toolkit",
+            "https://news.ycombinator.com/item?id=46424228"
+        ]
+    },
+    {
+        "title": "C-events, yet another event loop, simpler, smaller, faster, safer",
+        "url": "https://zelang-dev.github.io/c-events/",
+        "score": "14 points",
+        "comments_link": "item?id=46392095",
+        "comment_urls": []
+    },
+    {
+        "title": "Implementing HNSW (Hierarchical Navigable Small World) Vector Search in PHP",
+        "url": "https://centamori.com/index.php?slug=hierarchical-navigable-small-world-hnsw-php&lang=en",
+        "score": "48 points",
+        "comments_link": "item?id=46454968",
+        "comment_urls": [
+            "https://github.com/centamiv/vektor",
+            "https://centamori.com/index.php?slug=basics-of-web-development"
+        ]
+    },
+    {
+        "title": "Common Lisp SDK for the Datastar Hypermedia Framework",
+        "url": "https://github.com/fsmunoz/datastar-cl",
+        "score": "31 points",
+        "comments_link": "item?id=46454958",
+        "comment_urls": [
+            "https://fukamachi.hashnode.dev/woo-a-high-performance-common-lisp-web-server",
+            "https://github.com/fsmunoz/datastar-cl/blob/main/SSE-WOO-LIMITATIONS.org",
+            "https://dataspice.interlaye.red/"
+        ]
+    },
+    {
+        "title": "Sony PS5 ROM keys leaked \u2013 jailbreaking could be made easier with BootROM codes",
+        "url": "https://www.tomshardware.com/video-games/playstation/playstation-5-rom-keys-leaked-jailbreaking-could-be-made-easier-with-bootrom-codes",
+        "score": "138 points",
+        "comments_link": "item?id=46455053",
+        "comment_urls": [
+            "https://xcancel.com/notnotzecoxao/status/2006525981113332025",
+            "https://switchbrew.org/wiki/Fuses",
+            "https://www.chromium.org/developers/design-documents/tpm-usage/#rollback-prevention",
+            "https://youtu.be/DUGGJpn2_zY?t=2096",
+            "https://youtu.be/cVJZYT8kYsI",
+            "https://thecybersecguru.com/news/ps5-rom-keys-leaked/#:~:text=for%20mass%20piracy.-,THE%20EMULATION%20SCENE%3A%20A%20TURBO%20BOOST%20FOR%20SHADPS4%3F,-This%20is%20perhaps",
+            "https://news.ycombinator.com/item?id=46445107"
+        ]
+    },
+    {
+        "title": "Build a Deep Learning Library",
+        "url": "https://zekcrates.quarto.pub/deep-learning-library/",
+        "score": "38 points",
+        "comments_link": "item?id=46454587",
+        "comment_urls": [
+            "https://github.com/santinic/claudioflow",
+            "https://github.com/amitav-krishna/llm-from-scratch",
+            "https://amitav.net/building-lists.html",
+            "https://amitav.net/building-vectors.html",
+            "https://amitav.net/building-matrices.html"
+        ]
+    },
+    {
+        "title": "Heap Overflow in FFmpeg EXIF",
+        "url": "https://bugs.pwno.io/0014",
+        "score": "50 points",
+        "comments_link": "item?id=46454854",
+        "comment_urls": [
+            "https://github.com/FFmpeg/FFmpeg/commits/master/libavcodec/exif.c",
+            "https://github.com/FFmpeg/FFmpeg/commit/4bfac71ecd96488dd2dcd5649e08edb039a17a8b",
+            "https://x.com/FFmpeg/status/2006773495066464580",
+            "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/21258",
+            "https://code.ffmpeg.org/FFmpeg/FFmpeg/commit/4bfac71ecd96488dd2dcd5649e08edb039a17a8b"
+        ]
+    },
+    {
+        "title": "2025: The Year in LLMs",
+        "url": "https://simonwillison.net/2025/Dec/31/the-year-in-llms/",
+        "score": "783 points",
+        "comments_link": "item?id=46449643",
+        "comment_urls": [
+            "https://www.ibisworld.com/united-states/industry/psychic-services/4413/",
+            "https://news.gallup.com/poll/692738/paranormal-phenomena-met-skepticism.aspx",
+            "https://blog.samaltman.com/reflections",
+            "https://www.youtube.com/watch?v=VdIURAu1-aU",
+            "https://karpathy.github.io/2015/05/21/rnn-effectiveness/",
+            "https://archive.is/FM4y8",
+            "https://www.theverge.com/ai-artificial-intelligence/827820/large-language-models-ai-intelligence-neuroscience-problems",
+            "https://www.raspberrypi.org/blog/secondary-school-maths-showing-that-ai-systems-dont-think/",
+            "https://www.wired.com/story/the-worlds-biggest-bitcoin-mine-is-rattling-this-texas-oil-town/",
+            "https://chrisfrewin.medium.com/why-llms-will-never-be-agi-70335d452bd7",
+            "https://fred.stlouisfed.org/series/PRS85006092",
+            "https://en.wikipedia.org/wiki/Productivity_paradox",
+            "https://karpathy.bearblog.dev/auto-grade-hn/",
+            "https://wccftech.com/geforce-rtx-5090-prices-to-soar-to-5000-usd-nvidia-amd-gpu-price-hikes-q1-26/",
+            "https://simonwillison.net/about/#monthly",
+            "https://cognition.ai/blog/devin-annual-performance-review-2025#how-we-evaluated-devin",
+            "https://simonwillison.net/2025/nov/13/training-for-pelicans-riding-bicycles/",
+            "https://chrisfrew.in/blog/two-of-my-favorite-mcp-tools-i-use-every-day/",
+            "https://simonwillison.net/2025/Jan/10/ai-predictions/",
+            "https://www.jjude.com/shape-the-future/",
+            "https://simonwillison.net/2025/Dec/31/the-year-in-llms/#the-year-local-models-got-good-but-cloud-models-got-even-better",
+            "https://simonwillison.net/2025/Dec/31/the-year-in-llms/#the-year-of-top-ranked-chinese-open-weight-models",
+            "https://opencode.ai",
+            "https://opencode.ai/docs/providers/#anthropic",
+            "https://github.com/sst/opencode/issues/704",
+            "https://github.com/sst/opencode/issues/1686#issuecomment-3499864881",
+            "https://softwareengineeringstandard.com/2025/12/15/ai-agents-firejail-sandbox/",
+            "https://news.ycombinator.com/item?id=46374935",
+            "https://x.com/RobertFreundLaw/status/2006111090539687956",
+            "https://news.ycombinator.com/item?id=46451969",
+            "https://simonwillison.net/2024/Dec/22/link-blog/",
+            "https://news.ycombinator.com/from?site=simonwillison.net",
+            "https://news.ycombinator.com/newsguidelines.html",
+            "https://arxiv.org/abs/2512.24880",
+            "https://simonwillison.net/tags/paper-review/",
+            "https://old.reddit.com/r/MusicRecommendations/comments/1pq4f1r/instrumental_christmas_music/",
+            "https://news.ycombinator.com/newsguidelines.html",
+            "https://news.ycombinator.com/item?id=46450296",
+            "https://x.com/trq212/status/2001848726395269619",
+            "https://news.ycombinator.com/newsguidelines.html",
+            "https://www.openbsd.org/78.html",
+            "https://news.ycombinator.com/newsguidelines.html",
+            "https://simonwillison.net/2024/Dec/31/llms-in-2024/#the-environmental-impact-got-better",
+            "https://simonwillison.net/dashboard/posts-with-tags-in-a-year/?tags=open-source&year=2025&exclude=ai"
+        ]
+    },
+    {
+        "title": "2025 Letter",
+        "url": "https://danwang.co/2025-letter/",
+        "score": "136 points",
+        "comments_link": "item?id=46454413",
+        "comment_urls": [
+            "https://danwang.co/breakneck/",
+            "https://www.businessinsider.com/yc-founders-younger-under-more-pressure-beacause-ai-2025-8",
+            "https://tomtunguz.com/founder-age-median-trend/",
+            "https://www.youtube.com/watch?v=YfQbm8Wk2vU",
+            "https://news.ycombinator.com/item?id=46273326",
+            "https://x.com/elonmusk/status/2006548935372902751"
+        ]
+    },
+    {
+        "title": "Worlds largest electric ship launched by Tasmanian boatbuilder",
+        "url": "https://www.theguardian.com/australia-news/2025/may/02/hull-096-worlds-largest-electric-ship-battery-power-launched",
+        "score": "96 points",
+        "comments_link": "item?id=46452937",
+        "comment_urls": [
+            "https://fullycharged.show/episodes/electric-ferry-the-largest-electric-vehicle-in-the-world/",
+            "https://en.wikipedia.org/wiki/Heavy-lift_ship#Semi-submersible_ships",
+            "https://www.oresundslinjen.com/about-us/sustainability",
+            "https://spectrum.ieee.org/electric-boat-battery-ship-ferry",
+            "https://news.ycombinator.com/item?id=45844832",
+            "https://spectrum.ieee.org/electric-boat-battery-ship-ferry",
+            "https://www.abc.net.au/news/2025-05-02/incat-launches-worlds-largest-battery-electric-ship-hull096/105243498",
+            "https://wsdot.wa.gov/construction-planning/major-projects/ferry-system-electrification",
+            "https://www.ro.com.uy/2025/10/16/nuevo-barco-china-zorrilla-de-buquebus-estara-operativo-en-enero/",
+            "https://www.morski.hr/jadrolinija-za-7-7-milijuna-eura-kupuje-polovni-grcki-trajekt-koji-ne-ispunjava-hrvatske-propise/",
+            "https://octopusev.com/ev-hub/why-dont-electric-cars-have-solar-panels",
+            "https://www.forbes.com/sites/billroberson/2022/11/30/why-doesnt-every-electric-car-have-solar-panels/",
+            "https://www.reddit.com/r/NoStupidQuestions/comments/ykwd89/why_dont_electric_cars_have_solar_panels_on_the/",
+            "https://octopusev.com/ev-hub/why-dont-electric-cars-have-solar-panels",
+            "https://www.forbes.com/sites/billroberson/2022/11/30/why-doesnt-every-electric-car-have-solar-panels/",
+            "https://en.wikipedia.org/wiki/Francis_Scott_Key_Bridge_(Baltimore)",
+            "https://en.wikipedia.org/wiki/China_Zorrilla_(ship)",
+            "https://incat.com.au/wp-content/uploads/2019/05/Mini-Spec-130m.pdf",
+            "https://news.ycombinator.com/item?id=45844832"
+        ]
+    },
+    {
+        "title": "Rust--: Rust without the borrow checker",
+        "url": "https://github.com/buyukakyuz/rustmm",
+        "score": "90 points",
+        "comments_link": "item?id=46453062",
+        "comment_urls": [
+            "https://rust.godbolt.org/z/Mc6fvTzPG",
+            "https://en.wikipedia.org/wiki/Restrict",
+            "https://www.reddit.com/r/rust/comments/1q0kvn1/corroded_update_rust_now_i_removed_the_borrow/",
+            "https://github.com/buyukakyuz/corroded",
+            "https://github.com/buyukakyuz/corroded/issues/11#issuecomment-3700624666",
+            "https://news.ycombinator.com/newsguidelines.html"
+        ]
+    },
+    {
+        "title": "Meta made scam ads harder to find instead of removing them",
+        "url": "https://sherwood.news/tech/rather-than-fully-cracking-down-on-scam-ads-meta-worked-to-make-them-harder/",
+        "score": "214 points",
+        "comments_link": "item?id=46453582",
+        "comment_urls": [
+            "https://news.ycombinator.com/item?id=46446838",
+            "https://www.reuters.com/investigations/meta-created-playbook-fend-off-pressure-crack-down-scammers-documents-show-2025-12-31/",
+            "https://qz.com/dieselgate-sentences-handed-down-1851782440",
+            "https://apnews.com/article/volkswagen-germany-diesel-emissions-court-fraud-3878fcf6c06c9574bf5bff8d31029f90",
+            "https://en.wikipedia.org/wiki/Volkswagen_emissions_scandal",
+            "https://www.austlii.edu.au/cgi-bin/viewdb/au/legis/cth/consol_act/caca2010265/"
+        ]
+    },
+    {
+        "title": "Children and Helical\u00a0Time",
+        "url": "https://moultano.wordpress.com/2025/12/30/children-and-helical-time/",
+        "score": "112 points",
+        "comments_link": "item?id=46452763",
+        "comment_urls": [
+            "http://egypt.urnash.com/rita/",
+            "https://en.wikipedia.org/wiki/Flicker_fusion_threshold",
+            "https://www.reddit.com/r/tabletennis/comments/1i085sr/a_collection_of_ages_of_when_pro_players_started/",
+            "https://www.tabletennisdaily.com/forum/topics/what-is-the-peak-age-for-table-tennis-players.16270/",
+            "https://emersonbirthrx.com/wp-content/uploads/2015/04/Journal-5-2-Somatotropic-Therapy.pdf",
+            "https://en.wikipedia.org/wiki/Time_perception#:~:text=Proportional%20to%20the%20subjective%20time",
+            "https://centeroflighttulsa.org/three-transformations-spirit/",
+            "https://www.themarginalian.org/2012/04/12/john-cleese-on-creativity-1991/"
+        ]
+    },
+    {
+        "title": "Beyond the Nat: Cgnat, Bandwidth, and Practical Tunneling",
+        "url": "https://blog.rastrian.dev/post/beyond-the-nat-cgnat-bandwidth-and-practical-tunneling",
+        "score": "20 points",
+        "comments_link": "item?id=46401899",
+        "comment_urls": []
+    },
+    {
+        "title": "ACM Is Now Open Access",
+        "url": "https://www.acm.org/articles/bulletins/2026/january/acm-open-access",
+        "score": "267 points",
+        "comments_link": "item?id=46454763",
+        "comment_urls": [
+            "https://news.ycombinator.com/item?id=46313991",
+            "https://libraries.acm.org/subscriptions-access/corporate-pricing",
+            "https://libraries.acm.org/subscriptions-access/government/dl-pricing",
+            "https://libraries.acm.org/acmopen",
+            "https://dl.acm.org/action/publisherEcommerceHelper?doi=10.5555/premium-edition&redirectUri=https://dl.acm.org/",
+            "https://live.staticflickr.com/65535/55017806873_c9ba2490c1_b.jpg",
+            "https://dl.acm.org/doi/proceedings/10.1145/154766",
+            "https://dl.acm.org/doi/proceedings/10.1145/1238844",
+            "https://dl.acm.org/do/10.1145/event-12215/abs/",
+            "https://dl.acm.org/doi/10.1145/1165555.1165556",
+            "https://cc.acm.org/2026/open-access/",
+            "https://www.scott-a-s.com/acm-digital-library-should-remain-open",
+            "https://www.budapestopenaccessinitiative.org/read/",
+            "https://doi.org/10.1088/0029-5515/30/2/001",
+            "https://dl.acm.org/",
+            "https://www.ipetitions.com/petition/restore-fully-free-and-open-access",
+            "https://openalex.org/works?page=1&filter=primary_location.source.publisher_lineage:p4310319798,publication_year:2025"
+        ]
+    },
+    {
+        "title": "Easel Turns One One year of building my own IDE in Clojure",
+        "url": "https://blog.phronemophobic.com/easel-one-year.html",
+        "score": "142 points",
+        "comments_link": "item?id=46402202",
+        "comment_urls": [
+            "https://github.com/humbleui/humbleui",
+            "https://github.com/HumbleUI/JWM",
+            "https://github.com/HumbleUI/Skija"
+        ]
+    },
+    {
+        "title": "I canceled my book deal",
+        "url": "https://austinhenley.com/blog/canceledbookdeal.html",
+        "score": "576 points",
+        "comments_link": "item?id=46446815",
+        "comment_urls": [
+            "https://newsletter.pragmaticengineer.com/p/the-software-engineers-guidebook?utm_source=publication-search",
+            "https://www.observationalhazard.com/2025/12/writing-computer-science-from-scratch.html",
+            "https://en.wiktionary.org/wiki/set_up#English",
+            "https://en.wiktionary.org/wiki/setup",
+            "https://en.wikipedia.org/wiki/Phrasal_verb",
+            "https://www.successfulsoftware.net",
+            "https://news.ycombinator.com/item?id=46439143",
+            "https://www.goodreads.com/author/show/14291276.Joel_Burke",
+            "https://news.ycombinator.com/item?id=46398265",
+            "https://www.rebootinganation.com/",
+            "https://notebooklm.google",
+            "https://goatgreatesteconomistofalltime.ai/en",
+            "https://chatgpt.com/share/6955a171-e7a4-8012-bd78-9848087058ea",
+            "https://news.ycombinator.com/item?id=46448544",
+            "https://www.gabrielgambetta.com/computer-graphics-from-scratch/",
+            "https://raytracing.github.io/books/RayTracingInOneWeekend.html",
+            "https://www.realtimerendering.com/raytracinggems/",
+            "https://raytracing.github.io/",
+            "https://pbr-book.org/4ed/contents",
+            "https://github.com/pchalasani/claude-code-tools",
+            "https://stck.me/books",
+            "https://andrewpwheeler.com/2024/07/02/some-notes-on-self-publishing-a-tech-book/",
+            "https://kevmo.io/zero-to-code/"
+        ]
+    },
+    {
+        "title": "European Space Agency hit again as cybercriminals claim 200 GB data up for sale",
+        "url": "https://www.theregister.com/2025/12/31/european_space_agency_hacked/",
+        "score": "30 points",
+        "comments_link": "item?id=46455330",
+        "comment_urls": []
+    },
+    {
+        "title": "A font with built-in TeX syntax highlighting",
+        "url": "https://rajeeshknambiar.wordpress.com/2025/12/27/a-font-with-built-in-tex-syntax-highlighting/",
+        "score": "29 points",
+        "comments_link": "item?id=46403727",
+        "comment_urls": [
+            "https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/",
+            "https://news.ycombinator.com/item?id=41245159",
+            "https://typenetwork.com/articles/opentype-at-work-contextual-alternates",
+            "https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/"
+        ]
+    },
+    {
+        "title": "Pok\u00e9mon Team Optimization",
+        "url": "https://nchagnet.pages.dev/blog/pokemon-team-optimization/",
+        "score": "157 points",
+        "comments_link": "item?id=46401763",
+        "comment_urls": [
+            "https://upload.wikimedia.org/wikipedia/commons/9/97/Pokemon_Type_Chart.svg",
+            "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/switch",
+            "https://youtu.be/gEkMi_y3Wzo",
+            "https://www.smogon.com/sm/articles/sm_tiers",
+            "https://xcancel.com/Pokemon_cojp/status/2006379822012911872",
+            "https://github.com/PyroMikeGit/SuperKaizoIronMON",
+            "https://www.smogon.com/forums/threads/gengar-vs-tauros-1v1-who-is-more-likely-to-win.3745457/#post-10158046"
+        ]
+    },
+    {
+        "title": "Show HN: I created a tool to design and create foamcore inserts for boardgames",
+        "url": "https://boxinsertdesigner.com/",
+        "score": "39 points",
+        "comments_link": "item?id=46407292",
+        "comment_urls": []
+    },
+    {
+        "title": "Tell HN: Happy New Year",
+        "url": "item?id=46443744",
+        "score": "408 points",
+        "comments_link": "item?id=46443744",
+        "comment_urls": [
+            "https://sololaunches.com",
+            "https://listmy.site",
+            "https://github.com/VladSez/easy-invoice-pdf",
+            "https://www.linkedin.com/in/theosoti/",
+            "https://theosoti.com/",
+            "https://theosoti.com/you-dont-need-js/",
+            "https://picxstudio.com/share/DF9_t0T_EdciER5p",
+            "https://github.com/chaosprint/hindsight",
+            "https://online-riichi.com",
+            "https://duti.dev/blog/2025/2025-in-a-nutshell/",
+            "https://github.com/tirrenotechnologies/tirreno",
+            "https://peterspath.net",
+            "https://en.wikipedia.org/wiki/The_hand_of_God",
+            "https://app.ironcalc.com/?model=OIDKt-KaOnt-52CaU",
+            "https://sharyphil.com/japanese/japanese.html",
+            "https://www.barnesandnoble.com/w/after-the-spike-dean-spears/1146399816?ean=9781668057339"
+        ]
+    },
+    {
+        "title": "Resistance training load does not determine hypertrophy",
+        "url": "https://physoc.onlinelibrary.wiley.com/doi/10.1113/JP289684",
+        "score": "218 points",
+        "comments_link": "item?id=46448998",
+        "comment_urls": [
+            "https://journals.lww.com/nsca-jscr/fulltext/2015/10000/Effects_of_Low__vs__High_Load_Resistance_Training.36.aspx",
+            "https://pubmed.ncbi.nlm.nih.gov/35438660/",
+            "https://www.researchgate.net/publication/349502442_Does_Varying_Resistance_Exercises_for_the_Same_Muscle_Group_Promote_Greater_Strength_Gains",
+            "https://www.youtube.com/watch?v=rmOBmTZARq8",
+            "https://www.youtube.com/watch?v=YHLXank1PPk",
+            "https://mennohenselmans.com/the-myth-of-1glb-optimal-protein-intake-for-bodybuilders/",
+            "https://strengthlevel.com/strength-standards/deadlift/lb",
+            "https://stronglifts.com/stronglifts-5x5/intermediate/#rest-periods",
+            "https://store.reactivetrainingsystems.com/blogs/default-blog-1/how-to-use-rpe-in-your-training-correctly",
+            "https://youtu.be/DupQfkoI-Sc?si=QK_w2d99TcvNcQsD",
+            "https://en.wikipedia.org/wiki/Eccentric_training",
+            "https://www.biopharmadive.com/news/lilly-terminate-obesity-trial-bimagrumab-muscle-diabetes/761105/",
+            "https://www.sciencedirect.com/topics/medicine-and-dentistry/bimagrumab",
+            "https://youtu.be/_fbCcWyYthQ?si=gf39MLiqid9e6Szu",
+            "https://journals.lww.com/nsca-jscr/fulltext/2022/07000/equalization_of_training_protocols_by_time_under.2.aspx",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC8139349/",
+            "https://www.lesswrong.com/posts/bx3gkHJehRCYZAF3r/pain-is-not-the-unit-of-effort",
+            "https://dynomight.net/2021/01/25/how-to-run-without-all-the-agonizing-pain/"
+        ]
+    },
+    {
+        "title": "Web Browsers have stopped blocking pop-ups",
+        "url": "https://www.smokingonabike.com/2025/12/31/web-browsers-have-stopped-blocking-pop-ups/",
+        "score": "343 points",
+        "comments_link": "item?id=46446366",
+        "comment_urls": [
+            "https://arstechnica.com/tech-policy/2025/04/google-loses-ad-tech-monopoly-trial-faces-additional-breakups/",
+            "https://youtu.be/HTTxJRAs-uA?t=48",
+            "https://psfmember.org/civicrm/contribute/transact/?reset=1&id=13",
+            "https://pointieststick.com/2024/12/02/i-think-the-donation-notification-works/",
+            "https://pointieststick.com/2025/12/28/highlights-from-2025/",
+            "https://kagi.com/",
+            "https://blog.kagi.com/kagi-privacy-pass",
+            "https://www.youtube.com/watch?v=lDUvykJVmMU",
+            "https://tcpca.org/blog/2019/2/1/when-complacency-is-complicity",
+            "https://x.com/dmitriid/status/1817122117093056541",
+            "https://adguard.com/en/blog/adguard-browser-extension-v5-2.html",
+            "https://github.com/cavi-au/Consent-O-Matic/",
+            "https://en.wikipedia.org/wiki/Exit,_Voice,_and_Loyalty",
+            "https://www.cjr.org/opinion/micropayments-subscription-pay-by-article.php",
+            "https://github.com/MostlyEmre/hn-anti-paywall",
+            "https://support.apple.com/en-us/102602",
+            "https://en.wikipedia.org/wiki/Last_Measure",
+            "https://www.smokingonabike.com/2025/12/31/web-browsers-have-stopped-blocking-pop-ups/",
+            "https://imgur.com/a/2jkf6YA",
+            "https://github.com/ajayyy/SponsorBlock/wiki/iOS",
+            "https://support.mozilla.org/en-US/questions/1486487",
+            "https://github.com/whalebone/DNS4EU-Public/tree/main/iOS/DoH",
+            "https://web.archive.org/web/20090820110717/http://www.absurd.org",
+            "https://media.ccc.de/v/39c3-ai-agent-ai-spy"
+        ]
+    },
+    {
+        "title": "I rebooted my social life",
+        "url": "https://takes.jamesomalley.co.uk/p/this-might-be-oversharing",
+        "score": "242 points",
+        "comments_link": "item?id=46453114",
+        "comment_urls": [
+            "https://news.ycombinator.com/item?id=38158616",
+            "https://en.wikipedia.org/wiki/Men's_shed",
+            "https://en.wikipedia.org/wiki/Freemasonry",
+            "https://www.sciencedirect.com/science/article/pii/S1090513824001077",
+            "https://psychcentral.com/health/didactic-memory?utm_source=chatgpt.com#recap",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC11403199/",
+            "https://fractal.boston/",
+            "https://www.artofmanliness.com/people/social-skills/2-hour-cocktail-party/",
+            "https://www.southeastiowaunion.com/life/ottumwa-native-creates-underground-cave-maze/",
+            "https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon",
+            "https://jimmyakin.com/2024/03/dont-make-fun-of-renowned-dan-brown.html",
+            "https://en.wikipedia.org/wiki/Alt-right_pipeline",
+            "https://en.wikipedia.org/wiki/Graham_Linehan",
+            "https://www.whitehouse.gov/presidential-actions/2025/08/prosecuting-burning-of-the-american-flag/",
+            "https://www.reuters.com/legal/government/democratic-lawmakers-press-more-law-firms-about-their-deals-with-trump-2025-04-22/",
+            "https://www.whitehouse.gov/presidential-actions/2025/09/designating-antifa-as-a-domestic-terrorist-organization/",
+            "https://www.pbs.org/newshour/nation/federal-judge-rules-trump-unconstitutionally-targeted-gaza-war-protesters-for-deportation",
+            "https://www.cnbc.com/2025/09/19/trump-threatening-broadcast-station-licenses-explained.html",
+            "https://www.bbc.com/news/articles/cdjg2n3xv7zo",
+            "https://reason.com/2025/06/05/is-the-supreme-court-really-that-divided-the-facts-say-no/",
+            "https://fivethirtyeight.com/features/the-supreme-courts-partisan-divide-hasnt-been-this-sharp-in-generations/",
+            "https://wonderful.dev"
+        ]
+    }
+]
